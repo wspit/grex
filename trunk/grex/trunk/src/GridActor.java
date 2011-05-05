@@ -55,16 +55,17 @@ public class GridActor {
 	public void paint(int nrOfColumns, int nrOfRows) {
 		JPanel panel = WorldHandler.getInstance().getWorldCanvas();
 //		panel.setLayout(new GridLayout(nrOfRows, nrOfColumns));
-		DrawGrid grid =new DrawGrid(nrOfRows, nrOfColumns, gridWidth, gridHeight);
+		DrawGrid grid = new DrawGrid(nrOfRows, nrOfColumns, gridWidth, gridHeight);
 		panel.add(grid);
+		
 	
-		showCheckBox(panel);
+//		showCheckBox(panel);
 	}
 	
 		private void showCheckBox(JPanel panel){		
-			JCheckBox box = new JCheckBox("show grid");		
+//			JCheckBox box = new JCheckBox("show grid");		
 //			ControlPanel cpanel = new ControlPanel(new SimulationDelegateStandAlone(), true);
-			panel.add(box);
+//			panel.add(box);
 
 //			box.setSelected(true);
 			

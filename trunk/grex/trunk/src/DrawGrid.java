@@ -53,13 +53,15 @@ public class DrawGrid extends JPanel {
 			g.drawLine(0, rowSize, getWidth(), rowSize);
 			rowSize = spaceBetweenRows + rowSize;
 		}
-		g.drawLine(0, rowSize, getWidth(), rowSize);
+		g.drawLine(0, rowSize-1, getWidth()-1, rowSize-1);
 
 		for (int column = 0; column < columns; column++) {
 			g.drawLine(columnSize, 0, columnSize,getHeight());
 			columnSize = spaceBetweenColumns + columnSize;
 		}
-		g.drawLine(columnSize-1, 0, getWidth(), columnSize - 1);		
+		g.drawLine(columnSize-1, 0, getWidth()-1, columnSize-1 );
+		
+		
 	}
 	
 	

@@ -18,7 +18,7 @@ public class Grid  extends World
     public Grid()
     {   
     	
-        super(800, 600, 1); 
+        super(1024, 768, 1); 
         new GridActor(getWidth(),getHeight(),10,10);
 
         
